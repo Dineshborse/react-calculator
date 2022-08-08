@@ -1,0 +1,51 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: rgb(223,232,237);
+
+  --primary-color:rgb(93, 120, 236);
+  --numeric-btn-color:rgb(169, 230, 167);
+}
+.App-container{
+  height: fit-content;
+  width: 500px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.App-name-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.calculator-display-field-container-div{
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.calculator-display-field{
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 0px;
+  /* border-radius: 5px; */
+  font-size: 20px;
+  box-shadow: inset 2px 2px black; 
+}
+.calculator-display-field:focus{
+  outline: none;
+}
